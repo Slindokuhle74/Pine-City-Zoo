@@ -1,0 +1,92 @@
+
+body { font-family: sans-serif; 
+    text-align: center; 
+    padding: 50px; 
+    margin-top: 150px;
+ background-image: url(img/map-blur.png);
+ background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 1000;
+    background-image: url("img/wood-bg.png");
+    
+  background-position: center;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+ font-weight: bolder;
+    color: orange;
+}
+
+.logo {
+    height: 70px;         
+    width: auto;
+    margin-top: -60px;    
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+.Menu {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    height: 35px;
+    z-index: 800;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+ #weather { 
+        font-size: 30px;
+     }
+
+     #box{
+        display:block;
+        margin: 0 auto;
+        padding-top: 50px;
+       background-color: rgba(8, 17, 4, 0.467);
+       width: 600px;
+       height:300px;
+       border-radius: 20px;
+     }
+
+
+.city{
+        font-size:40px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        color: white;
+     }
+
+
+     .temp{
+        margin-top: 27px;
+        font-size: 50px;
+        font-weight: bold;
+        color:orange
+     }
+
+      .desc{
+        font-family:Verdana, Geneva, Tahoma, sans-serif; ;
+        margin-bottom: 20px;
+        color: white;
+      }
+     

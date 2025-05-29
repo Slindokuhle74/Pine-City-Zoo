@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zoo Weather</title>
+    <link rel="stylesheet" href="weather.css" />
+  </head>
+
+  <body>
+    <div class="Header">
+      <h1>
+        <img src="img/logo.png" alt="logo" class="logo" />
+      </h1>
+    </div>
+    <div id="box">
+      <div id="weather">Loading...</div>
+    </div>
+
+    <script>
+      const apiKey = "c8c1a2a6065b2ae6d52d264645d56810";
+
+      fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=Johannesburg&units=metric&appid=${apiKey}`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.cod === 200) {
+            const weatherDesc = data.weather[0].description;
+            const temp = data.main.temp.toFixed(1);
+            const city = data.name;
+            const iconPath = "img/sunny.png";
+
+            document.getElementById(
+              "weather"
+            ).textContent = `${city}: ${weatherDesc}, ${temp}°C`;
+
+            document.getElementById("weather").innerHTML = `
+          <div class="city">${city}</div>
+          <div class="temp">${temp}°C</div>
+          <div class="desc">${weatherDesc}</div>
+          <img src="${iconPath}" alt="Weather Icon" width="80">
+          
+        `;
+          } else {
+            document.getElementById("weather").textContent =
+              "Failed to load weather data.";
+          }
+        })
+        .catch((error) => {
+          document.getElementById("weather").textContent =
+            "Failed to load weather data.";
+          console.error("Error:", error);
+        });
+    </script>
+  </body>
+</html>

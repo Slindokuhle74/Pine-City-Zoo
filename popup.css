@@ -1,0 +1,37 @@
+ #Popup img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 600px;
+    height: 500px;
+    border: 5px solid rgb(33, 107, 33);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(17, 187, 45, 0.3);
+  }
+  
+  .Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 1000;
+    background-image: url("img/wood-bg.png");
+  background-position:center;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+ font-weight: bolder;
+    color: orange;
+}
+
+.logo {
+    height: 70px;         
+    width: auto;
+    margin-top: -30px;    
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  
