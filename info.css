@@ -1,0 +1,117 @@
+body {
+    padding-top: 150px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/map-blur.png);
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 1000;
+    background-image: url("img/wood-bg.png");
+  background-position:center;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+ font-weight: bolder;
+    color: orange;
+}
+
+.logo {
+    height: 70px;         
+    width: auto;
+    margin-top: -60px;    
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+.Menu {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    height: 35px;
+    z-index: 800;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.menu {
+  
+    display: block;
+    padding: 20px;
+    margin:0 auto;
+    width: 600px;
+    height:1000px;
+   background-color:rgba(255, 236, 236, 0.86);
+    font-family: sans-serif;
+   font-size: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  
+  .menu:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu img {
+    display: block;
+    margin: 0 auto;
+    width: 598px;
+    height: 330px;
+    margin-bottom: 1px;
+   
+  }
+  
+  .menu-text {
+    flex: auto;
+  }
+  
+  .menu-text h3 {
+  
+    color: rgb(104, 80, 62);
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  .menu-text p {
+    margin: 0;
+    font-size: 17px;
+    color:black;
+    margin-left: 10px;
+  }
+  
+  
+      footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 35px;
+    z-index: 800;
+    background-color: rgb(2, 115, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 270px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+      }

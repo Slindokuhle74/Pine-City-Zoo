@@ -1,0 +1,111 @@
+body {
+    padding-top: 200px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(img/map-blur.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 1000;
+    background-image: url("img/wood-bg.png");
+  background-position:center;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+ font-weight: bolder;
+    color: orange;
+}
+
+.logo {
+    height: 70px;         
+    width: auto;
+    margin-top: -60px;    
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+
+.Menu {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    height: 35px;
+    z-index: 800;
+    background-color: darkgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: white;
+    font-weight: bold;
+}
+
+form {
+   text-align: center;
+    margin: auto;
+    max-width: 400px;
+    background: white;
+    font-weight: bolder;
+    padding: 30px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  textarea, input[type="text"] {
+    display:block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  button {
+    display:block;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #228B22;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #thank-you {
+    text-align: center;
+    color: green;
+    display: none;
+    margin-top: 20px;
+  }
+
+  
+
+  
+
+      footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 35px;
+    z-index: 800;
+    background-color: rgb(2, 115, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 270px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+      }
